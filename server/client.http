@@ -1,0 +1,10 @@
+# Variables
+@baseUrl = http://localhost:3333/roons
+
+# Health check
+GET {{baseUrl}}/health
+
+###
+
+# Get roons
+GET {{baseUrl}}/roons
