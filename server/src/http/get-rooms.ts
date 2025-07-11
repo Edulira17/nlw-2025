@@ -3,8 +3,8 @@ import { db } from '../db/connection.ts';
 import { schema } from '../db/index.ts';
 
 // route que retorna todas as salas 
-export const getRoonsRoute: FastifyPluginCallbackZod = (app) => {
-  app.get('/roons', async () => {
+export const getRoomsRoute: FastifyPluginCallbackZod = (app) => {
+  app.get('/rooms', async () => {
     const results = await db.select({
       id: schema.rooms.id,
       name: schema.rooms.name

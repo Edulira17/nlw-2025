@@ -10,7 +10,7 @@ import { sql } from "./db/connection.ts";
 
 import fastifyCors from "@fastify/cors";
 import { env } from "./env.ts";
-import { getRoonsRoute } from "./http/get-roons.ts";
+import { getRoomsRoute } from "./http/get-rooms.ts";
 
 // permite que o Fastify “entenda” os esquemas do Zod e use esses tipos para validar auto, fornecer tipagem auto no typescript
 const app = fastify().withTypeProvider<ZodTypeProvider>();
@@ -26,7 +26,7 @@ app.get('/health', () => {
   return "OK"
 })
 
-app.register(getRoonsRoute)
+app.register(getRoomsRoute)
 
 app.listen({ port: env.PORT }).then(() => {
   // biome-ignore lint/suspicious/noConsole: only used in dev
