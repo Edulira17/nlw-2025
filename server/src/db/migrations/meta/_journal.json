@@ -15,6 +15,13 @@
       "when": 1752288470337,
       "tag": "0001_majestic_misty_knight",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1752419986424,
+      "tag": "0002_fine_stardust",
+      "breakpoints": true
     }
   ]
 }
