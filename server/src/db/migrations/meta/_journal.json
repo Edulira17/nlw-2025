@@ -8,6 +8,13 @@
       "when": 1752082302433,
       "tag": "0000_superb_hex",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1752288470337,
+      "tag": "0001_majestic_misty_knight",
+      "breakpoints": true
     }
   ]
 }

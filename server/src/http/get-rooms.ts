@@ -1,6 +1,6 @@
 import type { FastifyPluginCallbackZod } from 'fastify-type-provider-zod'
 import { db } from '../db/connection.ts';
-import { schema } from '../db/index.ts';
+import { schema } from '../db/schema/index.ts';
 
 // route que retorna todas as salas 
 export const getRoomsRoute: FastifyPluginCallbackZod = (app) => {
