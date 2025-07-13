@@ -4,7 +4,7 @@ import { db } from "../../db/connection.ts";
 import { schema } from "../../db/schema/index.ts";
 
 // Create new room
-export const getRoomsRoute: FastifyPluginCallbackZod = (app) => {
+export const createRoomRoute: FastifyPluginCallbackZod = (app) => {
   app.post(
     "/rooms",
     {
